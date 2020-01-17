@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>uTorrent Free Player</title>
+  <link rel="stylesheet" href="main.css" type="text/css" media="screen" title="Default" charset="utf-8">
+  <script type="text/javascript" src="index.js"></script>
+</head>
+  <div id="wmplayer">
+    <OBJECT ID="WMPEmbed" CLASSID="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95"
+	    STANDBY="Loading Windows Media Player components..." TYPE="application/x-oleobject" width="100%" height="100%">
+      <param name="windowlessVideo" value="true">
+      <param name="AutoSize" value="true">
+      <param name="AutoStart" value="true">
+      <param name="Balance" value="0">
+      <param name="DisplaySize" value="3">
+      <param name="Mute" value="false">
+      <param name="PlayCount" value="0">
+      <param name="Rate" value="1.0">
+      <param name="ShowAudioControls" value="true">
+      <param name="ShowControls" value="true">
+      <param name="ShowDisplay" value="false">
+      <param name="ShowStatusBar" value="false">
+      <param name="ShowTracker" value="false">
+      <param name="StretchToFit" value="True">
+      <param name="TransparentAtStart" value="true">
+      <param name="Volume" value="100">
+      <EMBED TYPE="application/x-mplayer2" NAME="WMPEmbed"
+	     width="100%" height="100%" ShowControls="true" ShowStatusBar="true" ShowDisplay="true" autostart="true" windowlessVideo="true"> </EMBED>
+    </OBJECT>
+  </div>
+  
+  <div id="bar">
+    <div id="left"><a id="hide" href="#" onclick="return hideBar();">Hide bar</a></div>
+    <div id="right"><a id="exit" href="#" onclick="return appExit();">Exit</a></div>
+    <div id="center">Having trouble playing this video properly? <a id="otherplayer" href="#" onclick="return tryAnotherPlayer();">Try Another Player</a> <a id="getplus" href="#" onclick="return getPlus();">Get the uTorrent Plus Player</a></div>
+  </div>
+</body>
+</html>
